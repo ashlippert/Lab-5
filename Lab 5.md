@@ -114,35 +114,19 @@ March 4th, 2025
 <br>
 
 
-**Part 1: **
-
-1. **Voltage Measurements:**
+**Part 1: Blinking an LED**
    
-   Upload the Blink program (File > Examples > Basics > Blink) to the Arduino and verify that the LED blinks. Adjust the delay in the program to decrease the blinking speed until the LED appears to remain constantly illuminated.
+   Upload the Blink program (File > Examples > Basics > Blink) to the Arduino and verify that the LED blinks. Adjust the delay in the program to decrease the blinking speed until the LED appears to remain constantly illuminated. Figure 7 shows the ON LED.
 
 <br>
 <div align= "center">
-<img src="https://github.com/user-attachments/assets/c3f1a1d9-a926-455f-b542-f99bfec9acda" alt "Circuit 1" width="400"/>
+<img src="" alt "LED Blink" width="400"/>
 <br>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 14: Altering the resistance of the 10kΩ potentiometer. </figcaption>
+<figcaption style="font-size: 16px; text-align: center;"> Figure 7: Blinking LED Circuit with LED on. </figcaption>
 </div>
 
 <br>
 
-**Part 1.2: Moderate Gain Inverting Op Amp Circuit**
-
-1. **Voltage Measurements:**
- 
-  The oscilloscope was used to plot Vi on channel 1 and Vo on channel 2. The gain of the circuit was measured and calculated using the oscilloscope. The observed o-scope display is provided in Figure 15.
-
-<br>
-<div align= "center">
-<img src="https://github.com/user-attachments/assets/b524aa6d-455b-4cc4-b844-3d1d2aeb82de" alt "Oscope Gain" width="400"/>
-<br>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 15: Display on o-scope when plotting Vi and Vo on separate channels. </figcaption>
-</div>
-
-<br>
 
 **Part 2: Potentiometer Controlled Circuit**
 
@@ -160,101 +144,11 @@ March 4th, 2025
    Run the same program from the previous section and observe how different lighting conditions affect the analog values. Implement an if-else statement to turn on the LED only when the brightness sensed by the photoresistor is low. Experiment with blocking the light source and analyze the circuit’s response time by observing whether the LED turns on and off immediately.
 
 <br>
-
-The o-scope display for the sine wave is shown in Figure 17 below.
-
-<br>
 <div align= "center">
 <img src="https://github.com/user-attachments/assets/70fde8c2-5680-46c5-9098-d5371c6bb318" alt "Sine wave Circuit 5" width="400"/>
 <br>
 <figcaption style="font-size: 16px; text-align: center;"> Figure 17: Sine wave output for integrating op-amp circuit. </figcaption>
 </div>
-
-The o-scope display for the square wave is shown in Figure 18 below.
-
-<br>
-<div align= "center">
-<img src="https://github.com/user-attachments/assets/3516ec5c-244c-4a1c-9120-a5e748cdac0c" alt "Square Wave Circuit 5" width="400"/>
-<br>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 18: Square wave output for integrating op-amp circuit. </figcaption>
-</div>
-
-The o-scope display for the triangle wave is shown in Figure 19 below.
-
-<br>
-<div align= "center">
-<img src="https://github.com/user-attachments/assets/21d84b60-d061-4f1b-ab17-345b21b9a0f5" alt "Triangle Wave Circuit 5" width="400"/>
-<br>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 19: Triangle wave output for integrating op-amp circuit. </figcaption>
-</div>
-
-   Additionally, the relationship between the wave output, amplitude, and frequency was observed. Figure 20 shows how the o-scope display responds to decreasing frequency, and Figure 20 describes the effect of increasing amplitude. It was noted that as the frequency increased, so did the voltage, whereas when the frequency was decreased, the voltage decreased.
-
-<br>
-<div align= "center">
-<img src="https://github.com/user-attachments/assets/c52bb2b4-9426-444e-9cca-b311ebf6d8a5" alt "Dec Frequency for Circuit 5" width="400"/>
-<br>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 20: Decreasing frequency wave o-scope display. </figcaption>
-</div>   
-
-
-<br>
-<div align= "center">
-<img src="https://github.com/user-attachments/assets/b122ffe4-abda-415f-a699-1c56f5c854e2" alt "Inc Amplitude for Circuit 5" width="400"/>
-<br>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 21: Increasing amplitude of wave o-scope display. </figcaption>
-</div>  
-<br>
-
-**Part 2.3: Differentiating Op Amp Circuit**
-   The function generator was used to observe and sketch the input and output waveforms for 1 kHz, 2Vp-p, sine, square, and triangle waves. Voltage and frequency were varied, and differences were noted.
-
-<br>
-
-The o-scope display for the sine wave is shown in Figure 22 below.
-
-<br>
-<div align= "center">
-<img src="hhttps://github.com/user-attachments/assets/c750b07d-cdd7-4e06-a770-52fd73f9cb5d" alt "Sine wave Circuit 6" width="400"/>
-<br>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 22: Sine wave output for integrating op-amp circuit. </figcaption>
-</div>
-
-The o-scope display for the square wave is shown in Figure 23 below.
-
-<br>
-<div align= "center">
-<img src="https://github.com/user-attachments/assets/6aeb3c5e-d3eb-48da-9bab-c91cdf5665bb" alt "Square Wave Circuit 6" width="400"/>
-<br>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 23: Square wave output for integrating op-amp circuit. </figcaption>
-</div>
-
-The o-scope display for the triangle wave is shown in Figure 24 below.
-
-<br>
-<div align= "center">
-<img src="https://github.com/user-attachments/assets/a9e0e3f0-ffd1-41b2-8095-cd032a79953e" alt "Triangle Wave Circuit 6" width="400"/>
-<br>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 24: Triangle wave output for integrating op-amp circuit. </figcaption>
-</div>
-
-   Just like in Part 2.2, the relationship between the wave output, amplitude, and frequency was observed. Figure 25 shows how the o-scope display responds to increasing frequency, and Figure 26 describes the effect of increasing amplitude. It was noted that as the frequency increased, so did the voltage, whereas when the frequency was decreased, the voltage decreased.
-
-<br>
-<div align= "center">
-<img src="https://github.com/user-attachments/assets/436c0218-0219-4276-8245-e2222432c82c" alt "Inc Frequency for Circuit 6" width="400"/>
-<br>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 25: Increasing frequency wave o-scope display. </figcaption>
-</div>
-
-
-<br>
-<div align= "center">
-<img src="https://github.com/user-attachments/assets/14e29e7b-22b2-4193-9b4c-8f5bffec1bc9" alt "Inc Amplitude for Circuit 6" width="400"/>
-<br>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 26: Increasing amplitude of wave o-scope display. </figcaption>
-</div>  
-<br>
 
 ## Test Results:
 
@@ -262,20 +156,10 @@ The o-scope display for the triangle wave is shown in Figure 24 below.
 
 | Resistor # | Expected Resistance (Ohms) | Tolerance | Max Value (Ohms) | Min Value (Ohms) | Measured Resistance (Ohms) |
 |------------|----------------------------|-----------|------------------|------------------|-----------------------------|
-| 1          | 270000                     | 5%        | 283500           | 256500           | 267200                      |
-| 2          | 8200                       | 5%        | 8610             | 7790             | 8110                        |
-| 3          | 68000                      | 5%        | 71400            | 64600            | 67100                       |
-| 4          | 68000                      | 5%        | 71400            | 64600            | 66800                       |
-| 5          | 330000                     | 5%        | 346500           | 313500           | 330600                      |
-| 6          | 1500000                    | 5%        | 1575000          | 1425000          | 1492000                     |
-| 7          | 150000                     | 5%        | 157500           | 142500           | 147500                      |
-| 8          | 1000                       | 5%        | 1050             | 950              | 988                         |
-| 9          | 22000                      | 5%        | 23100            | 20900            | 21810                       |
-| 10         | 4700                       | 5%        | 4935             | 4465             | 4652                        |
-| 11         | 1000                       | 5%        | 1050             | 950              | 978                         |
-| 12         | 22000                      | 10%       | 24200            | 19800            | 21030                       |
-| 13         | 220000                     | 5%        | 231000           | 209000           | 218200                      |
-
+| 1          | 330                        | 5%        | 346.5            | 313.5            | 325  
+                       |
+| 2          | 1000                       | 5%        | 1050             | 950              | 990
+                       |
 **Part 1 Results:**
 
 **Table 2: Unity Gain Inverting Op Amp Voltages**
