@@ -28,21 +28,22 @@ March 4th, 2025
 
 1. **LED Circuit Assembly**
 
-   To begin, mount the RedBoard and breadboard onto the SparkFun base, then connect the RedBoard to a computer running the Arduino IDE. In the IDE, select the Arduino UNO board and the appropriate COM port. Next, connect a 330Ω resistor and an LED in series to pin 13 on the RedBoard, ensuring a proper ground connection. 
+   To begin, mount the RedBoard and breadboard onto the SparkFun base, then connect the RedBoard to a computer running the Arduino IDE. In the IDE, select the Arduino UNO board and the appropriate COM port. Next, connect a 330Ω resistor and an LED in series to pin 13 on the RedBoard, ensuring a proper ground connection. Figure 1 below shows the schematic for the RedBoard.
 
 <div align= "center">
-<img src="https://github.com/user-attachments/assets/f3d6dfed-6490-4f5b-a008-85dc8d73c400" alt "Schematic 1" width="400"/>
+<img src="" alt "Schematic 1" width="400"/>
 <br>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 1: Schematic describing the unity gain inverting op amp circuit built for part 1 of this lab. </figcaption>
+<figcaption style="font-size: 16px; text-align: center;"> Figure 1: LED circuit schematic. </figcaption>
 </div>
 
 <br>
 
-   Once assembled, the circuit created using schematic 1 should resemble what is shown in Figure 2 below.
+   Once assembled, the RedBoard circuit created using schematic 1 should resemble what is shown in Figure 2 below.
+   
 <div align= "center">
-<img src="https://github.com/user-attachments/assets/2b5ec215-5c07-42e6-8ee8-ea23271a593c" alt "Circuit 1" width="400"/>
+<img src="" alt "Assembled LED circuit" width="400"/>
 <br>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 3: Constructed unity gain inverting op amp circuit from Schematic 1. </figcaption>
+<figcaption style="font-size: 16px; text-align: center;"> Figure 2: Constructed LED circuit from Schematic 1. </figcaption>
 </div>
 <br>
 
@@ -50,22 +51,22 @@ March 4th, 2025
 
 **Potentiometer Controlled Circuit Assembly**
 
-   Connect the potentiometer to 5V and Ground, with the variable resistance pin connected to A0. Keep the previous circuit intact while integrating the potentiometer into the setup.
+   Connect the potentiometer to 5V and Ground, with the variable resistance pin connected to A0. Keep the previous circuit intact while integrating the potentiometer into the setup. The schematic for this setup is given in Figure 3 below.
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/05193f3f-e39c-44ee-b2ad-e1f052b6da63" alt="Schematic 4" width="400">
+<img src="" alt="Schematic 2" width="400">
 <br/>
 
-<figcaption style="font-size: 16px; text-align: center;"> Figure 7: Voltage follower op amp circuit schematic. </figcaption>
+<figcaption style="font-size: 16px; text-align: center;"> Figure 3: Potentiometer controlled LED circuit schematic. </figcaption>
 </div>   
 
 <br/>
-  Once assembled, the circuit should look resemble Figure 8 below.
+  Once assembled, the circuit should look resemble Figure 4 below.
 
    <div align="center">
-  <img src="https://github.com/user-attachments/assets/1e3d7d5b-bb39-4b12-9abe-971e10933cd9" alt="Assembled voltage follower op amp circuit" width="400">
+  <img src="" alt="Assembled potentiometer controlled LED circuit" width="400">
       <br/>
-  <figcaption style="font-size: 16px; text-align: center;"> Figure 8: Constructed voltage follower op amp circuit from Figure 7. </figcaption>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 4: Constructed potentiometer controlled LED circuit from Figure 3. </figcaption>
 </div>
 <br>
 
@@ -73,8 +74,23 @@ March 4th, 2025
 
 **Photoresistor Controlled Circuit Assembly**
 
-  Replace the potentiometer in the previous circuit with a series circuit consisting of a photoresistor and a 10 kΩ resistor. Connect 5V to the photoresistor, Ground to the resistor, and A0 to the node between them. The schematic for this circuit is provided in Figure 
+  Replace the potentiometer in the previous circuit with a series circuit consisting of a photoresistor and a 10 kΩ resistor. Connect 5V to the photoresistor, Ground to the resistor, and A0 to the node between them. The schematic for this circuit is provided in Figure 5 below.
 
+ <div align="center">
+  <img src="" alt="Schematic 3" width="400">
+      <br/>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 5: Photoresistor controlled LED circuit schematic. </figcaption>
+</div>
+<br>
+
+   Once assembled, the RedBoard circuit should resemble what is shown in Figure 6 below.
+   
+<div align="center">
+  <img src="" alt="Assembled photoresistor controlled LED circuit" width="400">
+      <br/>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 6: Constructed photoresistor controlled LED circuit. </figcaption>
+</div>
+<br>
 
 
 ## Test Equipment
