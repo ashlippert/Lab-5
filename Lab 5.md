@@ -180,24 +180,144 @@ value to the LED pin using the function analogWrite(pin, mappedvalue).
 **Arduino IDE Code**
 **Part 1: Blinking an LED**
 <br/>
-blink_arduino
 
+*Script: blink_arduino*
+<br/>
 // the setup function runs once when you press reset or power the board
+<br>
 void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
+<br>
+  pinMode(LED_BUILTIN, OUTPUT);        // initialize digital pin LED_BUILTIN as an output.
+  <br>
 }
+<br/>
 
 // the loop function runs over and over again forever
+<br>
 void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
-  delay(10);                      // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
-  delay(10);                      // wait for a second
+<br>
+  digitalWrite(LED_BUILTIN, HIGH);     // turn the LED on (HIGH is the voltage level) 
+  <br>
+  delay(10);                           // wait for a second
+  <br>
+  digitalWrite(LED_BUILTIN, LOW);      // turn the LED off by making the voltage LOW
+  <br>
+  delay(10);                           // wait for a second
+  <br>
 }
+<br/>
 
-**Part 2:
+**Part 2: Potentiometer Controlled Circuit**
+<br>
+*Script: AnalogReadSerial_Arduino_BlinkControl*
+<br/>
+/*
+  AnalogReadSerial with LED Blink Control
+<br>
+  Reads an analog input on pin A0, prints the result to the Serial Monitor,
+  and uses the value to set the blinking time of the built-in LED.
+<br>
+  Connect:
+  <br>
+  - The center pin of a potentiometer to A0.
+  - One outer pin to +5V.
+  - The other outer pin to GND.
+<br>
+*/
+<br/>
 
+// Define the pin for the LED
+<br>
+const int ledPin = LED_BUILTIN;            // Built-in LED pin (usually pin 10)
+<br/>
+
+// the setup routine runs once when you press reset:
+<br>
+void setup() {
+<br>
+  // Initialize serial communication at 9600 bits per second:
+  <br>
+  Serial.begin(9600);
+  <br>
+  // Set the LED pin as an output
+  <br>
+  pinMode(ledPin, OUTPUT);
+  <br>
+}
+<br/>
+
+
+**Part 3: Photoresistor Controlled Circuit
+<br>
+*Script: AnalogReadSerial_Arduino_PhotoResistor*
+<br>
+// Define the pin for the LED
+<br>
+const int ledPin = LED_BUILTIN;
+<br>
+const int sensorPin = A0; // Photoresistor is connected to A0
+<br>
+
+// the setup routine runs once when you press reset:
+<br>
+void setup() {
+<br>
+  // Initialize serial communication at 9600 bits per second:
+  <br>
+  Serial.begin(9600);
+  <br>
+  // Set the LED pin as an output
+  <br>
+  pinMode(ledPin, OUTPUT);
+  <br>
+}
+<br/>
+
+// the loop routine runs over and over again forever:
+<br>
+void loop() {
+<br>
+  // Read the input on analog pin A0:
+  <br>
+  int sensorValue = analogRead(sensorPin);
+  <br>
+
+  // Print out the value you read:
+  <br>
+  Serial.print("Photoresistor Value: ");
+  <br>
+  Serial.println(sensorValue);
+  <br>
+
+  // Set threshold for darkness
+  <br>
+  int threshold = 400;
+  <br>
+
+  // experimental value from placing coat over photoresistor
+  <br>
+  // does not work if covered by finger
+  <br>
+  // LED turns on and off immediately before and after being covered
+  <br>
+
+  // Turn LED on if brightness is low (sensorValue is below threshold)
+  <br>
+  if (sensorValue < threshold) {
+  <br>
+    digitalWrite(ledPin, HIGH);  // turn the LED on
+    <br>
+  } else {
+  <br>
+    digitalWrite(ledPin, LOW);   // turn the LED off
+    <br>
+  }
+  <br>
+
+  delay(100); // Small delay for stability
+  <br>
+}
+<br/>
 
 ## Discussion:
 Put code snippets in where necessary.
