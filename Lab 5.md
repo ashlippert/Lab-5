@@ -28,7 +28,7 @@ March 4th, 2025
 
 1. **LED Circuit Assembly**
 
-   To begin, mount the RedBoard and breadboard onto the SparkFun base, then connect the RedBoard to a computer running the Arduino IDE. In the IDE, select the Arduino UNO board and the appropriate COM port. Next, connect a 330Ω resistor and an LED in series to pin 13 on the RedBoard, ensuring a proper ground connection. Figure 1 below shows the schematic for the RedBoard.
+   To begin, mount the RedBoard and breadboard onto the SparkFun base, then connect the RedBoard to a computer running the Arduino IDE. In the IDE, select the Arduino UNO board and the appropriate COM port. Next, connect a 330Ω resistor and an LED in series to pin 13 on the RedBoard, ensuring a proper ground connection. Figure 1 below shows the schematic for the circuit.
 
 <div align= "center">
 <img src="" alt "Schematic 1" width="400"/>
@@ -39,11 +39,11 @@ March 4th, 2025
 <br>
 
    Once assembled, the RedBoard circuit created using schematic 1 should resemble what is shown in Figure 2 below.
-   
+
 <div align= "center">
-<img src="" alt "Assembled LED circuit" width="400"/>
+<img src="https://github.com/user-attachments/assets/d035d937-2607-494d-9e97-8ce2f591d9b5" alt "Assembled LED circuit" width="400"/>
 <br>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 2: Constructed LED circuit from Schematic 1. </figcaption>
+<figcaption style="font-size: 16px; text-align: center;"> Figure 3: Constructed LED circuit from Schematic 1. </figcaption>
 </div>
 <br>
 
@@ -53,14 +53,25 @@ March 4th, 2025
 
    Connect the potentiometer to 5V and Ground, with the variable resistance pin connected to A0. Keep the previous circuit intact while integrating the potentiometer into the setup. The schematic for this setup is given in Figure 3 below.
 
+
 <div align="center">
-<img src="" alt="Schematic 2" width="400">
+<img src="https://github.com/user-attachments/assets/4cec5b73-a503-4f8a-9187-81eadedb0bf6" alt="Schematic 2" width="400">
 <br/>
 
-<figcaption style="font-size: 16px; text-align: center;"> Figure 3: Potentiometer controlled LED circuit schematic. </figcaption>
+<figcaption style="font-size: 16px; text-align: center;"> Figure 4: Potentiometer controlled LED circuit schematic. </figcaption>
 </div>   
 
 <br/>
+
+<div align="center">
+<img src="https://github.com/user-attachments/assets/f5ad3cd8-12cb-47c6-9d8f-ee0798607954" alt="Schematic 2" width="400">
+<br/>
+
+<figcaption style="font-size: 16px; text-align: center;"> Figure 5: Potentiometer controlled LED circuit layout. </figcaption>
+</div>   
+
+<br/>
+
   Once assembled, the circuit should look resemble Figure 4 below.
 
    <div align="center">
@@ -77,7 +88,7 @@ March 4th, 2025
   Replace the potentiometer in the previous circuit with a series circuit consisting of a photoresistor and a 10 kΩ resistor. Connect 5V to the photoresistor, Ground to the resistor, and A0 to the node between them. The schematic for this circuit is provided in Figure 5 below.
 
  <div align="center">
-  <img src="" alt="Schematic 3" width="400">
+  <img src="https://github.com/user-attachments/assets/2d1a3739-0cca-4c5f-8fb9-16fd0eecc990" alt="Schematic 3" width="400">
       <br/>
   <figcaption style="font-size: 16px; text-align: center;"> Figure 5: Photoresistor controlled LED circuit schematic. </figcaption>
 </div>
