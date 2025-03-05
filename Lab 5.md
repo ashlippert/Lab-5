@@ -320,37 +320,42 @@ void loop() {
 <br/>
 
 ## Discussion:
-Put code snippets in where necessary.
+**Part 1: Blinking an LED**
+<br>
 
-Open the blink program (File>Examples>Basics>Blink) and download it to the Arduino.
-a. What does this program do?
-b. What are the major sections of the computer program and what does each section do?
+The Blink program successfully made the LED connected to pin 13 turn on and off repeatedly. The code consists of two main sections: the *setup()* function, which initializes pin 13 as an output, and the *loop()* function, which continuously toggles the LED state with a delay.
 
-Your LED flashes with a delay from the uploaded code. Decrease this delay (after both write instructions)
-until the LED just stops blinking—that is until the light is still blinking but appears to stay constantly
-illuminated.
-a. What is the value of your delay now?
-b. What field may this “persistence of vision” play a greater role in?
-c. Discuss this further in your lab report.
+When decreasing the delay time in the code, it was observed that at a delay of 10 milliseconds, the LED appeared to be constantly illuminated. This phenomenon occurs due to persistence of vision, where the human eye retains an image for a short duration after it disappears. This effect is widely used in display technologies such as LED screens, film projectors, and animations to create the illusion of continuous motion.
 
-Part 2
-What is the difference between an analog and a digital signal?
-b. In your lab report, list a few examples of real-world examples that can be described by an analog
-signal. Likewise, what are the two states which can be conveyed by a digital signal?
-c. What happens to the Serial Monitor Refresh rate as you move the potentiometer to control the LED
-blinking time?
+<br>
 
-Part 3
-Try different objects to block the light on the photoresistor. What are the minimum and maximum analog
-values you can detect with this circuit?
-4. Discussion Question:
-a. Does the LED turn on immediately after blocking the light? What about when you remove the object
-blocking the light, does the LED turn off immediately? Why?
+**Part 2: Potentiometer Controlled Circuit**
 
-Part 4 – LED dimmer using PWM
-3. Discussion Question:
-Connect the oscilloscope to the LED pin and observe and record what happens to the signal and the LED
-brightness when you turn the knob of the potentiometer.
+
+The difference between an analog and digital signal was demonstrated using a potentiometer. Analog signals can take continuous values, whereas digital signals are limited to two states: HIGH (1) and LOW (0). Examples of analog signals include sound waves, temperature variations, and light intensity. In contrast, digital signals are binary, representing ON or OFF states.
+
+As the potentiometer was adjusted, the LED's blinking speed changed accordingly, which was reflected in the Serial Monitor. A lower resistance value resulted in a higher refresh rate, meaning the LED blinked faster, while a higher resistance slowed down the blinking and the Serial Monitor updates.
+
+<br>
+
+**Part 3: Photoresistor Controlled Circuit**
+
+
+By using a photoresistor, it was possible to detect varying light intensities. The minimum analog reading was observed when the sensor was fully covered, approaching 0 (0V), while the maximum reading occurred under bright light, reaching close to 1023 (5V).
+
+The LED turned on immediately upon blocking the light and turned off just as quickly when the obstruction was removed. This immediate response occurs because the circuit processes real-time analog values without incorporating hysteresis. If hysteresis were included, it would introduce a buffer zone to prevent rapid fluctuations and provide smoother transitions.
+
+<br>
+
+**Part 4: LED Dimmer Using PWM**
+
+
+Using Pulse-Width Modulation (PWM), the brightness of an LED was controlled by adjusting the duty cycle. Observing the waveform on the oscilloscope, it was evident that increasing the duty cycle (longer HIGH time) resulted in a brighter LED, while decreasing the duty cycle (shorter HIGH time) dimmed it. At 100% duty cycle, the LED appeared fully illuminated, while at 0% duty cycle, it remained off.
+
+
+This experiment demonstrated how PWM effectively simulates an analog output using digital signals, a principle used in applications such as motor speed control, LED dimming, and audio signal modulation.
+
 
 ## Conclusion:
+This lab provided hands-on experience in microcontroller programming, sensor integration, and PWM signal control. The experiments demonstrated key principles of digital and analog signals, persistence of vision, and sensor-based input processing. The use of an oscilloscope to visualize PWM waveforms further reinforced the understanding of duty cycles and their effect on perceived LED brightness. These findings are essential for applications in embedded systems, electronic circuits, and real-world automation technologies.
 
