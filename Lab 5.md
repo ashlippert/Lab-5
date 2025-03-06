@@ -43,7 +43,7 @@ March 4th, 2025
 <div align= "center">
 <img src="https://github.com/user-attachments/assets/d035d937-2607-494d-9e97-8ce2f591d9b5" alt "Assembled LED circuit" width="400"/>
 <br>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 3: Constructed LED circuit from Schematic 1. </figcaption>
+<figcaption style="font-size: 16px; text-align: center;"> Figure 2: Constructed LED circuit from Schematic 1. </figcaption>
 </div>
 <br>
 
@@ -51,14 +51,14 @@ March 4th, 2025
 
 **Potentiometer Controlled Circuit Assembly**
 
-   Connect the potentiometer to 5V and Ground, with the variable resistance pin connected to A0. Keep the previous circuit intact while integrating the potentiometer into the setup. The schematic for this setup is given in Figure 3 below.
+   Connect the potentiometer to 5V and Ground, with the variable resistance pin connected to A0. Keep the previous circuit intact while integrating the potentiometer into the setup. The schematic for this setup is given in Figure 3 and 4 below.
 
 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/4cec5b73-a503-4f8a-9187-81eadedb0bf6" alt="Schematic 2" width="400">
 <br/>
 
-<figcaption style="font-size: 16px; text-align: center;"> Figure 4: Potentiometer controlled LED circuit schematic. </figcaption>
+<figcaption style="font-size: 16px; text-align: center;"> Figure 3: Potentiometer controlled LED circuit schematic. </figcaption>
 </div>   
 
 <br/>
@@ -67,17 +67,17 @@ March 4th, 2025
 <img src="https://github.com/user-attachments/assets/f5ad3cd8-12cb-47c6-9d8f-ee0798607954" alt="Schematic 2" width="400">
 <br/>
 
-<figcaption style="font-size: 16px; text-align: center;"> Figure 5: Potentiometer controlled LED circuit layout. </figcaption>
+<figcaption style="font-size: 16px; text-align: center;"> Figure 4: Potentiometer controlled LED circuit layout. </figcaption>
 </div>   
 
 <br/>
 
-  Once assembled, the circuit should look resemble Figure 4 below.
+  Once assembled, the circuit should look resemble Figure 5 below.
 
    <div align="center">
   <img src="" alt="Assembled potentiometer controlled LED circuit" width="400">
       <br/>
-  <figcaption style="font-size: 16px; text-align: center;"> Figure 4: Constructed potentiometer controlled LED circuit from Figure 3. </figcaption>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 5: Constructed potentiometer controlled LED circuit from Figure 3. </figcaption>
 </div>
 <br>
 
@@ -90,14 +90,21 @@ March 4th, 2025
  <div align="center">
   <img src="https://github.com/user-attachments/assets/2d1a3739-0cca-4c5f-8fb9-16fd0eecc990" alt="Schematic 3" width="400">
       <br/>
-  <figcaption style="font-size: 16px; text-align: center;"> Figure 5: Photoresistor controlled LED circuit schematic. </figcaption>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 6: Photoresistor controlled LED circuit schematic. </figcaption>
+</div>
+<br>
+
+ <div align="center">
+  <img src="https://github.com/user-attachments/assets/e0e26917-4999-4354-8292-89b97e9d5812" alt="Schematic 3" width="400">
+      <br/>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 7: Photoresistor controlled LED circuit layout. </figcaption>
 </div>
 <br>
 
    Once assembled, the RedBoard circuit should resemble what is shown in Figure 6 below.
    
 <div align="center">
-  <img src="" alt="Assembled photoresistor controlled LED circuit" width="400">
+  <img src="https://github.com/user-attachments/assets/bdb131cb-9715-411e-a1f5-6af3f370975d" alt="Assembled photoresistor controlled LED circuit" width="400">
       <br/>
   <figcaption style="font-size: 16px; text-align: center;"> Figure 6: Constructed photoresistor controlled LED circuit. </figcaption>
 </div>
@@ -149,49 +156,7 @@ March 4th, 2025
 
    The code used for this portion of the lab is provided below:
 
-
-**Part 2: Potentiometer Controlled Circuit**
-
-   Upload the Analog Read Serial program (Examples > Basics > AnalogReadSerial) to the Arduino and open the serial monitor (Tools > Serial Monitor), ensuring the baud rate is set to 9600 bps. Adjust the potentiometer and observe the serial output. Modify the code to control the LED’s blinking time based on the potentiometer’s input, demonstrating how analog inputs can be converted into digital signals.
-
-   The code used for this section of the lab is provided below:
-
-
-**Part 3: Photoresistor Controlled Circuit**
-   Run the same program from the previous section and observe how different lighting conditions affect the analog values. Implement an if-else statement to turn on the LED only when the brightness sensed by the photoresistor is low. Experiment with blocking the light source and analyze the circuit’s response time by observing whether the LED turns on and off immediately.
-
-   The code used for this portion of the lab is provided below:
-
-**Part 4: LED Dimmer Using PWM**
-   Read the voltage from the potentiometer and map the voltage value,from 0 to 1023, to a value from 0 to 255 using the function map(value, fromLow, fromHigh, toLow, toHigh). Write the mapped
-value to the LED pin using the function analogWrite(pin, mappedvalue).
-
-## Test Results:
-
-**Table 1: Resistor Values**
-
-| Resistor # | Expected Resistance (Ohms) | Tolerance | Max Value (Ohms) | Min Value (Ohms) | Measured Resistance (Ohms) |
-|------------|----------------------------|-----------|------------------|------------------|----------------------------|
-| 1          | 330                        | 5%        | 346.5            | 313.5            | 325                        |
-| 2          | 1000                       | 5%        | 1050             | 950              | 990                        |
-
-**Table 2: LED Blinking Delay**
-
-|               | Delay Setting | Blinking? |
-|---------------|---------------|-----------|
-| Original      | 1000          | Yes       |
-| -14           | 500           | Yes       |
-| -12           | 200           | Yes       |
-| -5            | 100           | Yes       |
-| 0             | 50            | Yes       |
-| 5             | 30            | Yes       |
-| 12            | 15            | Yes       |
-| 14            | 10            | No        |
-
-**Arduino IDE Code**
-**Part 1: Blinking an LED**
-<br/>
-
+<br>
 *Script: blink_arduino*
 <br/>
 // the setup function runs once when you press reset or power the board
@@ -219,6 +184,10 @@ void loop() {
 <br/>
 
 **Part 2: Potentiometer Controlled Circuit**
+
+   Upload the Analog Read Serial program (Examples > Basics > AnalogReadSerial) to the Arduino and open the serial monitor (Tools > Serial Monitor), ensuring the baud rate is set to 9600 bps. Adjust the potentiometer and observe the serial output. Modify the code to control the LED’s blinking time based on the potentiometer’s input, demonstrating how analog inputs can be converted into digital signals.
+
+   The code used for this section of the lab is provided below:
 <br>
 *Script: AnalogReadSerial_Arduino_BlinkControl*
 <br/>
@@ -257,8 +226,10 @@ void setup() {
 }
 <br/>
 
+**Part 3: Photoresistor Controlled Circuit**
+   Run the same program from the previous section and observe how different lighting conditions affect the analog values. Implement an if-else statement to turn on the LED only when the brightness sensed by the photoresistor is low. Experiment with blocking the light source and analyze the circuit’s response time by observing whether the LED turns on and off immediately.
 
-**Part 3: Photoresistor Controlled Circuit
+   The code used for this portion of the lab is provided below:
 <br>
 *Script: AnalogReadSerial_Arduino_PhotoResistor*
 <br>
@@ -329,6 +300,101 @@ void loop() {
   <br>
 }
 <br/>
+
+**Part 4: LED Dimmer Using PWM**
+   Read the voltage from the potentiometer and map the voltage value,from 0 to 1023, to a value from 0 to 255 using the function map(value, fromLow, fromHigh, toLow, toHigh). Write the mapped
+value to the LED pin using the function analogWrite(pin, mappedvalue).
+
+   The code used for this portion of the lab is provided below:
+
+*Script: AnalogReadSerial_Arduino_Dimmer*
+<br>
+// Define the pins
+<br>
+const int potPin = A0;    // Potentiometer connected to A0
+<br>
+const int ledPin = 9;     // LED connected to PWM pin 9 (PWM capable)
+<br/>
+
+// Setup function runs once when the Arduino is powered on or reset
+<br>
+void setup() {
+<br>
+  Serial.begin(9600);     // Initialize serial communication at 9600 baud
+  <br>
+  pinMode(ledPin, OUTPUT); // Set LED pin as an output
+  <br>
+}
+<br>
+
+// Loop function runs repeatedly
+<br>
+void loop() {
+<br>
+  // Read the analog value from the potentiometer (0 - 1023)
+  <br>
+  int sensorValue = analogRead(potPin);
+  <br/>
+
+  // Map the sensor value to a PWM range (0 - 255)
+  <br>
+  int pwmValue = map(sensorValue, 0, 1023, 0, 255);
+  <br>
+
+  // Print values to Serial Monitor for debugging
+  <br>
+  Serial.print("Potentiometer Value: ");
+  <br>
+  Serial.print(sensorValue);
+  <br>
+  Serial.print(" -> PWM Value: ");
+  <br>
+  Serial.println(pwmValue);
+  <br/>
+
+  // Adjust the LED brightness using PWM
+  <br>
+  analogWrite(ledPin, pwmValue);
+<br/>
+  delay(10); // Small delay for stability
+  <br>
+}
+<br/>
+
+## Test Results:
+
+**Table 1: Resistor Values**
+
+| Resistor # | Expected Resistance (Ohms) | Tolerance | Max Value (Ohms) | Min Value (Ohms) | Measured Resistance (Ohms) |
+|------------|----------------------------|-----------|------------------|------------------|----------------------------|
+| 1          | 330                        | 5%        | 346.5            | 313.5            | 325                        |
+| 2          | 1000                       | 5%        | 1050             | 950              | 990                        |
+
+**Table 2: LED Blinking Delay**
+
+|               | Delay Setting | Blinking? |
+|---------------|---------------|-----------|
+| Original      | 1000          | Yes       |
+| -14           | 500           | Yes       |
+| -12           | 200           | Yes       |
+| -5            | 100           | Yes       |
+| 0             | 50            | Yes       |
+| 5             | 30            | Yes       |
+| 12            | 15            | Yes       |
+| 14            | 10            | No        |
+
+**Arduino IDE Code**
+**Part 1: Blinking an LED**
+<br/>
+
+
+
+**Part 2: Potentiometer Controlled Circuit**
+
+
+
+**Part 3: Photoresistor Controlled Circuit
+
 
 ## Discussion:
 **Part 1: Blinking an LED**
