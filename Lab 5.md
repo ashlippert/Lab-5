@@ -31,7 +31,7 @@ March 4th, 2025
    To begin, mount the RedBoard and breadboard onto the SparkFun base, then connect the RedBoard to a computer running the Arduino IDE. In the IDE, select the Arduino UNO board and the appropriate COM port. Next, connect a 330Ω resistor and an LED in series to pin 13 on the RedBoard, ensuring a proper ground connection. Figure 1 below shows the schematic for the circuit.
 
 <div align= "center">
-<img src="" alt "Schematic 1" width="400"/>
+<img src="https://github.com/user-attachments/assets/eadb7c9b-1530-4ca1-a7ec-9db46abc69f4" alt "Schematic 1" width="400"/>
 <br>
 <figcaption style="font-size: 16px; text-align: center;"> Figure 1: LED circuit schematic. </figcaption>
 </div>
@@ -41,7 +41,7 @@ March 4th, 2025
    Once assembled, the RedBoard circuit created using schematic 1 should resemble what is shown in Figure 2 below.
 
 <div align= "center">
-<img src="https://github.com/user-attachments/assets/d035d937-2607-494d-9e97-8ce2f591d9b5" alt "Assembled LED circuit" width="400"/>
+<img src="https://github.com/user-attachments/assets/d035d937-2607-494d-9e97-8ce2f591d9b5" alt "Schematic 1" width="400"/>
 <br>
 <figcaption style="font-size: 16px; text-align: center;"> Figure 2: Constructed LED circuit from Schematic 1. </figcaption>
 </div>
@@ -57,16 +57,14 @@ March 4th, 2025
 <div align="center">
 <img src="https://github.com/user-attachments/assets/4cec5b73-a503-4f8a-9187-81eadedb0bf6" alt="Schematic 2" width="400">
 <br/>
-
 <figcaption style="font-size: 16px; text-align: center;"> Figure 3: Potentiometer controlled LED circuit schematic. </figcaption>
 </div>   
 
 <br/>
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/f5ad3cd8-12cb-47c6-9d8f-ee0798607954" alt="Schematic 2" width="400">
+<img src="https://github.com/user-attachments/assets/f5ad3cd8-12cb-47c6-9d8f-ee0798607954" alt="Layout 2" width="400">
 <br/>
-
 <figcaption style="font-size: 16px; text-align: center;"> Figure 4: Potentiometer controlled LED circuit layout. </figcaption>
 </div>   
 
@@ -75,7 +73,7 @@ March 4th, 2025
   Once assembled, the circuit should look resemble Figure 5 below.
 
    <div align="center">
-  <img src="" alt="Assembled potentiometer controlled LED circuit" width="400">
+  <img src="https://github.com/user-attachments/assets/23505952-297d-40d4-9144-ae91f7526852" alt="Assembled potentiometer controlled LED circuit" width="400">
       <br/>
   <figcaption style="font-size: 16px; text-align: center;"> Figure 5: Constructed potentiometer controlled LED circuit from Figure 3. </figcaption>
 </div>
@@ -85,7 +83,7 @@ March 4th, 2025
 
 **Photoresistor Controlled Circuit Assembly**
 
-  Replace the potentiometer in the previous circuit with a series circuit consisting of a photoresistor and a 10 kΩ resistor. Connect 5V to the photoresistor, Ground to the resistor, and A0 to the node between them. The schematic for this circuit is provided in Figure 5 below.
+  Replace the potentiometer in the previous circuit with a series circuit consisting of a photoresistor and a 10 kΩ resistor. Connect 5V to the photoresistor, Ground to the resistor, and A0 to the node between them. The schematic and layout for this circuit is provided in Figure 6 and 7 below.
 
  <div align="center">
   <img src="https://github.com/user-attachments/assets/2d1a3739-0cca-4c5f-8fb9-16fd0eecc990" alt="Schematic 3" width="400">
@@ -95,28 +93,28 @@ March 4th, 2025
 <br>
 
  <div align="center">
-  <img src="https://github.com/user-attachments/assets/e0e26917-4999-4354-8292-89b97e9d5812" alt="Schematic 3" width="400">
+  <img src="https://github.com/user-attachments/assets/e0e26917-4999-4354-8292-89b97e9d5812" alt="Layout 3" width="400">
       <br/>
   <figcaption style="font-size: 16px; text-align: center;"> Figure 7: Photoresistor controlled LED circuit layout. </figcaption>
 </div>
 <br>
 
-   Once assembled, the RedBoard circuit should resemble what is shown in Figure 6 below.
+   Once assembled, the RedBoard circuit should resemble what is shown in Figure 8 below.
    
 <div align="center">
   <img src="https://github.com/user-attachments/assets/bdb131cb-9715-411e-a1f5-6af3f370975d" alt="Assembled photoresistor controlled LED circuit" width="400">
       <br/>
-  <figcaption style="font-size: 16px; text-align: center;"> Figure 6: Constructed photoresistor controlled LED circuit. </figcaption>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 8: Constructed photoresistor controlled LED circuit. </figcaption>
 </div>
 <br>
 
 **Part 4: LED Dimmer Using PWM**
-   Return to the circuit used in Part 2 with the potentiometer. Change the LED pin to one that is PWM capable (Pin 10 was used for our circuit).
+   Return to the circuit used in Part 2 with the potentiometer. Change the LED pin to one that is PWM capable (Pin 10 was used for our circuit). Connect the oscilloscope to the circuit as pictured in Figure 9.
 
 <div align="center">
-  <img src="" alt="Assembled photoresistor dimmer controlled LED circuit" width="400">
+  <img src="https://github.com/user-attachments/assets/2e53e3ca-a50a-4e84-9d06-43e6568c5548" alt="Assembled photoresistor dimmer controlled LED circuit" width="400">
       <br/>
-  <figcaption style="font-size: 16px; text-align: center;"> Figure 7: Constructed photoresistor dimmer controlled LED circuit. </figcaption>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 9: Constructed photoresistor dimmer controlled LED circuit. </figcaption>
 </div>
 <br>
 
@@ -131,28 +129,19 @@ March 4th, 2025
 
 **Resistor Measurement**
 
-   For this part of the experiment, the resistance each resistor was measured using a Digital Multimeter (DMM) and the results were compared to the expected values based on the resistor color codes. We recorded the expected resistance, the acceptable tolerance range, and the measured resistance in a table. Any resistors that fell outside the expected range were noted. The technique used for resistor measurement is shown in Figure 7 below.
+   For this part of the experiment, the resistance each resistor was measured using a Digital Multimeter (DMM) and the results were compared to the expected values based on the resistor color codes. We recorded the expected resistance, the acceptable tolerance range, and the measured resistance in a table. Any resistors that fell outside the expected range were noted. The technique used for resistor measurement is shown in Figure 10 below.
 
  <div align="center">
-  <img src="https://github.com/user-attachments/assets/fd70fd10-4528-41e1-9a64-bf901897e7e4" alt="Assembled differentiating op amp circuit" width="400">
+  <img src="https://github.com/user-attachments/assets/fd70fd10-4528-41e1-9a64-bf901897e7e4" alt="Measuring resistor value" width="400">
       <br/>
-  <figcaption style="font-size: 16px; text-align: center;"> Figure 7: Measuring Resistor Values. </figcaption>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 10: Measuring Resistor Values. </figcaption>
 </div>
 <br>
 
 
 **Part 1: Blinking an LED**
    
-   Upload the Blink program (File > Examples > Basics > Blink) to the Arduino and verify that the LED blinks. Adjust the delay in the program to decrease the blinking speed until the LED appears to remain constantly illuminated. Figure 8 shows the ON LED.
-
-<br>
-<div align= "center">
-<img src="" alt "LED Blink" width="400"/>
-<br>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 8: Blinking LED Circuit with LED on. </figcaption>
-</div>
-
-<br>
+   Upload the Blink program (File > Examples > Basics > Blink) to the Arduino and verify that the LED blinks. Adjust the delay in the program to decrease the blinking speed until the LED appears to remain constantly illuminated.
 
    The code used for this portion of the lab is provided below:
 
@@ -228,6 +217,14 @@ void setup() {
 
 **Part 3: Photoresistor Controlled Circuit**
    Run the same program from the previous section and observe how different lighting conditions affect the analog values. Implement an if-else statement to turn on the LED only when the brightness sensed by the photoresistor is low. Experiment with blocking the light source and analyze the circuit’s response time by observing whether the LED turns on and off immediately.
+   Figure 11 below shows the testing technique used by our group for blocking the photoresistor to turn on the LED.
+   
+   <div align="center">
+  <img src="https://github.com/user-attachments/assets/c1e7a1b5-2e6b-421f-a35b-a1dbbcdf9432" alt="Potentiometer testing" width="400">
+      <br/>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 11: Testing the photoresistor controlled circuit. </figcaption>
+</div>
+<br>
 
    The code used for this portion of the lab is provided below:
 <br>
@@ -302,7 +299,7 @@ void loop() {
 <br/>
 
 **Part 4: LED Dimmer Using PWM**
-   Read the voltage from the potentiometer and map the voltage value,from 0 to 1023, to a value from 0 to 255 using the function map(value, fromLow, fromHigh, toLow, toHigh). Write the mapped
+   Read the voltage from the potentiometer and map the voltage value, from 0 to 1023, to a value from 0 to 255 using the function map(value, fromLow, fromHigh, toLow, toHigh). Write the mapped
 value to the LED pin using the function analogWrite(pin, mappedvalue).
 
    The code used for this portion of the lab is provided below:
@@ -382,19 +379,6 @@ void loop() {
 | 5             | 30            | Yes       |
 | 12            | 15            | Yes       |
 | 14            | 10            | No        |
-
-**Arduino IDE Code**
-**Part 1: Blinking an LED**
-<br/>
-
-
-
-**Part 2: Potentiometer Controlled Circuit**
-
-
-
-**Part 3: Photoresistor Controlled Circuit
-
 
 ## Discussion:
 **Part 1: Blinking an LED**
