@@ -301,6 +301,37 @@ void loop() {
 **Part 4: LED Dimmer Using PWM**
    Read the voltage from the potentiometer and map the voltage value, from 0 to 1023, to a value from 0 to 255 using the function map(value, fromLow, fromHigh, toLow, toHigh). Write the mapped
 value to the LED pin using the function analogWrite(pin, mappedvalue).
+   The oscilloscope was used to read the output with the potentiometer OFF, on DIM, and ON. The results are given below in Figures 12-14
+
+   With the oscilloscope on and the potentiometer turned OFF, the output is shown in Figure 12.
+   
+<br>
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/9c577df7-1456-41a8-bafb-1feed918f204" alt="Oscope POT OFF" width="400">
+      <br/>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 12: Oscilloscope output for OFF potentiometer. </figcaption>
+</div>
+<br>
+
+   With the potentiometer turned on to display a "DIM" LED, the oscilloscope output is shown in Figure 13.
+
+<br>
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/279f6ab1-995a-4c36-ba42-b43c6d681346" alt="Oscope POT DIM" width="400">
+      <br/>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 13: Oscilloscope output for DIM LED potentiometer. </figcaption>
+</div>
+<br>
+
+With the potentiometer turned on to display a "ON" LED, the oscilloscope output is shown in Figure 14.
+
+<br>
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/279f6ab1-995a-4c36-ba42-b43c6d681346" alt="Oscope POT DIM" width="400">
+      <br/>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 14: Oscilloscope output for ON LED potentiometer. </figcaption>
+</div>
+<br>
 
    The code used for this portion of the lab is provided below:
 
